@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.MyasnikovaES.Sprint1.Task1.V0.Lib;
+using Tyuiu.MyasnikovaES.Sprint1.Task2.V0.Lib;
 
-namespace Tyuiu.MyasnikovaES.Sprint1.Task1.V0
+namespace Tyuiu.MyasnikovaES.Sprint1.Task2.V0
 {
     class Program
     {
@@ -17,40 +17,33 @@ namespace Tyuiu.MyasnikovaES.Sprint1.Task1.V0
             Console.Title = "Спринт #1 / Выполнила: Мясникова Е. С. / ИСПБ-23-1";
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* Спринт #1                                                                *");
-            Console.WriteLine("* Тема: Организация ввода/вывода в консольных приложениях                  *");
+            Console.WriteLine("* Тема: Арифметические операторы С#                                        *");
             Console.WriteLine("* Задание #1                                                               *");
-            Console.WriteLine("* Вариант #24                                                              *");
+            Console.WriteLine("* Вариант #4                                                               *");
             Console.WriteLine("* Выполнила: Мясникова Елена Сергеевна / ИСПБ-23-1                         *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                 *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные,  *");
-            Console.WriteLine("* вычисляет результат по формуле (1-x)/(2+y) и печатает его на экране.     *");
+            Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.              *");
             Console.WriteLine("*                                                                          *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         *");
             Console.WriteLine("****************************************************************************");
 
-            double x, y;
+            int x;
 
-            Console.WriteLine("Ведите значение X:");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Ведите значение Y:");
-
-            y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
             Console.WriteLine("****************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
+            Console.WriteLine("Площадь квадрата S = " + ds.CalculateSquare(x));
 
             Console.ReadLine();
 
-            
-
-
-
         }
+
     }
 }
